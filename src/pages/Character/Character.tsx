@@ -47,7 +47,16 @@ export default function Character() {
     <div className="app">
       <Header />
       <div className="character">
-        {error && <h1>Something went wrong</h1>}
+        {error && (
+          <>
+            <h1 style={{ color: "#fff", width: "100%", textAlign: "center" }}>
+              something went wrong!
+            </h1>
+            <h1 style={{ color: "#fff", width: "100%", textAlign: "center" }}>
+              error message: {error.message}
+            </h1>
+          </>
+        )}
         {loading && (
           <Backdrop
             sx={{ color: "#fff", zIndex: (theme) => theme.zIndex.drawer + 1 }}
