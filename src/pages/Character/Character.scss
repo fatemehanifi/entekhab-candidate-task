@@ -1,0 +1,54 @@
+    .character {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .character_container {
+            min-height: 400px;
+            width: 60%;
+            display: flex;
+            align-items: center;
+            color: #fff;
+            background-color: rgba($color: #000000, $alpha: .7);
+            border-radius: 15px;
+            margin: 2rem 0;
+
+            @media screen and (max-width:992px) {
+                flex-direction: column;
+            }
+
+            .desc {
+                width: 90%;
+                padding: 2rem;
+
+                h1 {
+                    font-size: 20px;
+                    font-weight: 800;
+                }
+
+                .content {
+                    font-weight: 600;
+                    font-size: 15px;
+                    padding-left: 1rem;
+
+                    .tree_view {
+                        height: 150px;
+                        flex-grow: 1;
+                        overflow-y: auto;
+                        overflow-x: hidden;
+
+                        .MuiTreeItem-iconContainer,
+                        .MuiTreeItem-label {
+                            font-size: 15px !important;
+                            font-weight: 600;
+                        }
+
+                        .MuiTreeItem-label {
+                            border-bottom: 1px solid pink;
+                        }
+
+                    }
+                }
+            }
+        }
+    }

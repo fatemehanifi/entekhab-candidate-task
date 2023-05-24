@@ -1,0 +1,85 @@
+.MuiPaper-root {
+    background-color: rgba($color: #000000, $alpha: 1) !important;
+    color: #fff !important;
+    padding: 1rem 2rem !important;
+
+    .MuiToolbar-root {
+        display: flex !important;
+        justify-content: space-evenly !important;
+        align-items: center;
+
+        @media screen and (max-width:680px) {
+            flex-direction: column !important;
+        }
+    }
+
+}
+
+.MuiBox-root .css-1and29 {
+    box-shadow: 1px 1px 10px -2px rgba(147, 146, 146, 0.4) !important;
+    -webkit-box-shadow: 1px 1px 10px -2px rgba(147, 146, 146, 0.65) !important;
+    -moz-box-shadow: 1px 1px 10px -2px rgba(147, 146, 146, 0.65) !important;
+    margin-left: 5rem;
+    border-radius: 12px;
+
+    @media screen and (max-width: 680px) {
+        // margin-left: 0;
+        margin: 1.5rem 0;
+    }
+}
+
+.MuiFormLabel-root {
+    color: #fff !important;
+
+}
+
+.MuiSelect-select {
+    color: #fff !important;
+
+}
+
+.MuiSvgIcon-root {
+    color: #fff !important;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+
+    .MuiAppBar-root {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .filter_value {
+        margin: 0 2rem !important;
+        border-radius: 12px;
+        box-shadow: 1px 1px 10px -2px rgba(147, 146, 146, 0.4) !important;
+        -webkit-box-shadow: 1px 1px 10px -2px rgba(147, 146, 146, 0.65) !important;
+        -moz-box-shadow: 1px 1px 10px -2px rgba(147, 146, 146, 0.65) !important;
+
+        @media screen and (max-width: 680px) {
+            // margin-left: 0;
+            margin-bottom: 1.5rem !important;
+        }
+
+        input {
+            color: #fff !important;
+        }
+    }
+
+    .submit_btn {
+        background-color: #fff;
+        color: #000;
+        font-size: 12px !important;
+        font-weight: 600 !important;
+        padding: .5rem 1rem;
+        transition: ease-in .3s;
+
+        &:hover {
+            background-color: #fff;
+            opacity: .7 !important;
+        }
+    }
+}
